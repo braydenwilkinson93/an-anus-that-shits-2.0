@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/bookshelf-thumbnail.webp",
+        url: "/bookshelf-thumbnail.jpg",
         width: 1200,
-        height: 630,
+        height: 658,
         alt: "An Anus that Shits blog bookshelf",
       },
     ],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "An Anus that Shits blog",
     description: "A Critical Reading Log & Essay Archive",
-    images: ["/bookshelf-thumbnail.webp"],
+    images: ["/bookshelf-thumbnail.jpg"],
   },
 };
 
