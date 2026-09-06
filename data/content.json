@@ -7,6 +7,21 @@
   },
   "sections": [
     {
+      "id": "daily-update",
+      "type": "hero",
+      "order": 0,
+      "height": null,
+      "data": {
+        "eyebrow": "Daily Reading Update • September 6, 2026",
+        "heading": "The Denial of Death — Reading Notes",
+        "body": "Today’s reading: Ernest Becker on the tension between the animal body and the symbolic self. Add the pages, ideas, and questions that stay with you after each reading session.",
+        "readTime": "Daily entry",
+        "readLinkLabel": "Open reading notes →",
+        "sidebarTitle": "From Today’s Reading",
+        "sidebarBody": "A running record of passages, reactions, and unfinished thoughts from the current book."
+      }
+    },
+    {
       "id": "carousel",
       "type": "bookCarousel",
       "order": 1,
