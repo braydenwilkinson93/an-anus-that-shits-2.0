@@ -41,6 +41,14 @@ export default function HomeSections() {
     }));
   };
 
+  const handleRemoveSection = (id: string) => {
+    if (!window.confirm("Remove this section?")) return;
+    updateContent((d) => ({
+      ...d,
+      sections: d.sections.filter((s) => s.id !== id),
+    }));
+  };
+
   return (
     <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
       <SortableContext items={sections.map((s) => s.id)} strategy={verticalListSortingStrategy}>
@@ -50,6 +58,7 @@ export default function HomeSections() {
             id={section.id}
             height={section.height}
             onHeightChange={(h) => handleHeightChange(section.id, h)}
+              onRemove={() => handleRemoveSection(section.id)}
           >
             {section.type === "hero" && <HeroSection sectionId={section.id} />}
             {section.type === "bookCarousel" && <BookCarousel sectionId={section.id} />}

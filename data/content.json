@@ -7,21 +7,6 @@
   },
   "sections": [
     {
-      "id": "hero",
-      "type": "hero",
-      "order": 0,
-      "height": null,
-      "data": {
-        "eyebrow": "Latest Monograph • September 3, 2026",
-        "heading": "On the Mechanical Certainty of Human Rationalization",
-        "body": "An investigation into how individual character defenses systematically construct self-justifying philosophical frameworks under the pressure of existential anxiety.",
-        "readTime": "6 min read",
-        "readLinkLabel": "Read Essay →",
-        "sidebarTitle": "From the Desk",
-        "sidebarBody": "A structured, chronological record of literary analysis, philosophical inquiry, and psychological criticism."
-      }
-    },
-    {
       "id": "carousel",
       "type": "bookCarousel",
       "order": 1,

@@ -9,11 +9,13 @@ export default function SortableSection({
   id,
   height,
   onHeightChange,
+  onRemove,
   children,
 }: {
   id: string;
   height: number | null;
   onHeightChange: (next: number | null) => void;
+  onRemove: () => void;
   children: React.ReactNode;
 }) {
   const { editMode } = useContentStore();
@@ -75,6 +77,14 @@ export default function SortableSection({
           Reset height
         </button>
       )}
+      <button
+        type="button"
+        onClick={onRemove}
+        className="absolute right-3 top-3 z-20 rounded bg-red-950 px-2 py-1 font-mono text-[10px] text-red-200 opacity-0 shadow-lg group-hover/section:opacity-100"
+        title="Remove section"
+      >
+        Remove section
+      </button>
       {children}
       <div
         onPointerDown={handleResizeStart}
